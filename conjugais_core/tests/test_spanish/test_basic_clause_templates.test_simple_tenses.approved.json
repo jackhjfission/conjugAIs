@@ -1,0 +1,329 @@
+{
+    "components": [
+        {
+            "function": {
+                "description": "The main verb indicates the primary action of the sentence.",
+                "instruction": "Include a main verb in the sentence.",
+                "language": "SPANISH",
+                "name": "main_verb"
+            },
+            "modes": [
+                {
+                    "description": "Collection of all Spanish subject person.",
+                    "is_choice": true,
+                    "name": "all_person",
+                    "options": [
+                        {
+                            "description": "Corresponds to 'yo' (I). Used when the speaker refers to themselves performing the action.",
+                            "instruction": "Use the Spanish first person singular conjugation",
+                            "language": "SPANISH",
+                            "name": "first_person_singular"
+                        },
+                        {
+                            "description": "Corresponds to 't\u00fa' (you, informal). Used when addressing one person in a familiar or casual context.",
+                            "instruction": "Use the Spanish second person singular conjugation",
+                            "language": "SPANISH",
+                            "name": "second_person_singular"
+                        },
+                        {
+                            "description": "Corresponds to 'usted' (you, formal). Used when addressing one person in a formal, respectful, or professional context.",
+                            "instruction": "Use the Spanish second person singular conjugation for polite address",
+                            "language": "SPANISH",
+                            "name": "second_person_singular_polite"
+                        },
+                        {
+                            "description": "Corresponds to '\u00e9l/ella' (he/she/it). Used when referring to one person or thing other than the speaker or addressee.",
+                            "instruction": "Use the Spanish third person singular conjugation",
+                            "language": "SPANISH",
+                            "name": "third_person_singular"
+                        },
+                        {
+                            "description": "Corresponds to 'nosotros/nosotras' (we). Used when the speaker includes themselves in a group performing the action.",
+                            "instruction": "Use the Spanish first person plural conjugation",
+                            "language": "SPANISH",
+                            "name": "first_person_plural"
+                        },
+                        {
+                            "description": "Corresponds to 'vosotros/vosotras' (you all, informal). Used when addressing multiple people in a familiar or casual context, primarily in Spain.",
+                            "instruction": "Use the Spanish second person plural conjugation",
+                            "language": "SPANISH",
+                            "name": "second_person_plural"
+                        },
+                        {
+                            "description": "Corresponds to 'ustedes' (you all, formal). Used when addressing multiple people in a formal context, or any group in Latin America.",
+                            "instruction": "Use the Spanish second person plural conjugation for polite address",
+                            "language": "SPANISH",
+                            "name": "second_person_plural_polite"
+                        },
+                        {
+                            "description": "Corresponds to 'ellos/ellas' (they). Used when referring to multiple people or things other than the speaker or addressee.",
+                            "instruction": "Use the Spanish third person plural conjugation",
+                            "language": "SPANISH",
+                            "name": "third_person_plural"
+                        }
+                    ]
+                },
+                {
+                    "description": "Collection of all Spanish simple indicativo tenses.",
+                    "is_choice": true,
+                    "name": "all_simple_indicativo",
+                    "options": [
+                        {
+                            "description": "Describes current actions, habits, universal truths, and near-future plans.",
+                            "instruction": "Use the Spanish simple present tense in the indicative mood",
+                            "language": "SPANISH",
+                            "name": "presente_indicativo"
+                        },
+                        {
+                            "description": "Describes completed actions in the past with a definite beginning and end.",
+                            "instruction": "Use the Spanish preterito in the indicative mood",
+                            "language": "SPANISH",
+                            "name": "preterito_indicativo"
+                        },
+                        {
+                            "description": "Describes ongoing, habitual, or descriptive past actions without a defined beginning or end.",
+                            "instruction": "Use the Spanish imperfecto in the indicative mood",
+                            "language": "SPANISH",
+                            "name": "imperfecto_indicativo"
+                        },
+                        {
+                            "description": "Describes what will or shall happen, predictions, or assumptions.",
+                            "instruction": "Use the Spanish simple future tense in the indicative mood",
+                            "language": "SPANISH",
+                            "name": "futuro_indicativo"
+                        },
+                        {
+                            "description": "Expresses what someone would, could, or should do, used for polite requests, hypothetical situations (if clauses), expressing wishes, and speculation.",
+                            "instruction": "Use the Spanish conditional in the indicative mood",
+                            "language": "SPANISH",
+                            "name": "conditional_indicativo"
+                        }
+                    ]
+                },
+                {
+                    "description": "The number of words to use.",
+                    "is_choice": true,
+                    "name": "count",
+                    "options": [
+                        {
+                            "description": "",
+                            "instruction": "Use 1 of this word type in the sentence.",
+                            "language": "SPANISH",
+                            "name": "1"
+                        }
+                    ]
+                }
+            ],
+            "optional": false,
+            "word_options": []
+        },
+        {
+            "function": {
+                "description": "The subject indicates who or what is performing the verb's action.",
+                "instruction": "Include a subject in the sentence.",
+                "language": "SPANISH",
+                "name": "subject"
+            },
+            "modes": [
+                {
+                    "description": "The number of words to use.",
+                    "is_choice": true,
+                    "name": "count",
+                    "options": [
+                        {
+                            "description": "",
+                            "instruction": "Use 1 of this word type in the sentence.",
+                            "language": "SPANISH",
+                            "name": "1"
+                        },
+                        {
+                            "description": "",
+                            "instruction": "Use 2 of this word type in the sentence.",
+                            "language": "SPANISH",
+                            "name": "2"
+                        }
+                    ]
+                },
+                {
+                    "description": "Choice of noun or pronoun for subject.",
+                    "is_choice": true,
+                    "name": "subject_noun_pronoun",
+                    "options": [
+                        {
+                            "description": "In Spanish, subject pronouns can be inferred from the verb conjugation, making them optional in most contexts.",
+                            "instruction": "Do not explicitly use subject pronouns",
+                            "language": "SPANISH",
+                            "name": "None"
+                        },
+                        {
+                            "description": "In Spanish specific nouns can be used as subjects, direct objects or indirect objects.",
+                            "instruction": "Explicitly use one or more nouns. Do not use pronouns",
+                            "language": "SPANISH",
+                            "name": "nouns"
+                        },
+                        {
+                            "description": "In Spanish specific pronouns can be used as subjects, direct objects or indirect objects.",
+                            "instruction": "Explicitly use one or more pronouns. Do not use nouns.",
+                            "language": "SPANISH",
+                            "name": "pronouns"
+                        },
+                        {
+                            "description": "In Spanish, nouns and pronouns can both be used together for emphasis or clarity.",
+                            "instruction": "Use both nouns and pronouns together",
+                            "language": "SPANISH",
+                            "name": "nouns_and_pronouns"
+                        }
+                    ]
+                }
+            ],
+            "optional": false,
+            "word_options": []
+        },
+        {
+            "function": {
+                "description": "The object indicates who or what is receiving the verb's action.",
+                "instruction": "Include a direct object in the sentence.",
+                "language": "SPANISH",
+                "name": "direct_object"
+            },
+            "modes": [
+                {
+                    "description": "The number of words to use.",
+                    "is_choice": true,
+                    "name": "count",
+                    "options": [
+                        {
+                            "description": "",
+                            "instruction": "Use 1 of this word type in the sentence.",
+                            "language": "SPANISH",
+                            "name": "1"
+                        },
+                        {
+                            "description": "",
+                            "instruction": "Use 2 of this word type in the sentence.",
+                            "language": "SPANISH",
+                            "name": "2"
+                        }
+                    ]
+                },
+                {
+                    "description": "Choice of noun or pronoun for object.",
+                    "is_choice": true,
+                    "name": "object_noun_pronoun",
+                    "options": [
+                        {
+                            "description": "In Spanish specific nouns can be used as subjects, direct objects or indirect objects.",
+                            "instruction": "Explicitly use one or more nouns. Do not use pronouns",
+                            "language": "SPANISH",
+                            "name": "nouns"
+                        },
+                        {
+                            "description": "In Spanish specific pronouns can be used as subjects, direct objects or indirect objects.",
+                            "instruction": "Explicitly use one or more pronouns. Do not use nouns.",
+                            "language": "SPANISH",
+                            "name": "pronouns"
+                        },
+                        {
+                            "description": "In Spanish, nouns and pronouns can both be used together for emphasis or clarity.",
+                            "instruction": "Use both nouns and pronouns together",
+                            "language": "SPANISH",
+                            "name": "nouns_and_pronouns"
+                        }
+                    ]
+                }
+            ],
+            "optional": true,
+            "word_options": []
+        },
+        {
+            "function": {
+                "description": "The indirect object indicates to whom or for whom an action is done.",
+                "instruction": "Include an indirect object in the sentence.",
+                "language": "SPANISH",
+                "name": "indirect_object"
+            },
+            "modes": [
+                {
+                    "description": "The number of words to use.",
+                    "is_choice": true,
+                    "name": "count",
+                    "options": [
+                        {
+                            "description": "",
+                            "instruction": "Use 1 of this word type in the sentence.",
+                            "language": "SPANISH",
+                            "name": "1"
+                        },
+                        {
+                            "description": "",
+                            "instruction": "Use 2 of this word type in the sentence.",
+                            "language": "SPANISH",
+                            "name": "2"
+                        }
+                    ]
+                },
+                {
+                    "description": "Choice of noun or pronoun for object.",
+                    "is_choice": true,
+                    "name": "object_noun_pronoun",
+                    "options": [
+                        {
+                            "description": "In Spanish specific nouns can be used as subjects, direct objects or indirect objects.",
+                            "instruction": "Explicitly use one or more nouns. Do not use pronouns",
+                            "language": "SPANISH",
+                            "name": "nouns"
+                        },
+                        {
+                            "description": "In Spanish specific pronouns can be used as subjects, direct objects or indirect objects.",
+                            "instruction": "Explicitly use one or more pronouns. Do not use nouns.",
+                            "language": "SPANISH",
+                            "name": "pronouns"
+                        },
+                        {
+                            "description": "In Spanish, nouns and pronouns can both be used together for emphasis or clarity.",
+                            "instruction": "Use both nouns and pronouns together",
+                            "language": "SPANISH",
+                            "name": "nouns_and_pronouns"
+                        }
+                    ]
+                }
+            ],
+            "optional": true,
+            "word_options": []
+        },
+        {
+            "function": {
+                "description": "Wildcards can be used to supplement the other word types which are explicitly specified to make sentences sound more natural and provide further translation practice.",
+                "instruction": "Include wildcard words in the sentence.",
+                "language": "SPANISH",
+                "name": "wildcard"
+            },
+            "modes": [
+                {
+                    "description": "The number of words to use.",
+                    "is_choice": true,
+                    "name": "count",
+                    "options": [
+                        {
+                            "description": "",
+                            "instruction": "Use 1 of this word type in the sentence.",
+                            "language": "SPANISH",
+                            "name": "1"
+                        },
+                        {
+                            "description": "",
+                            "instruction": "Use 2 of this word type in the sentence.",
+                            "language": "SPANISH",
+                            "name": "2"
+                        }
+                    ]
+                }
+            ],
+            "optional": true,
+            "word_options": []
+        }
+    ],
+    "description": "Practice of all Spanish simple tenses.",
+    "language": "SPANISH",
+    "name": "simple_tenses"
+}

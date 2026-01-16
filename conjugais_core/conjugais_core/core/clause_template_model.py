@@ -13,3 +13,17 @@ class Mode(BaseModel):
     description: str
     options: list[Option]
     is_choice: bool
+
+
+class Component(BaseModel):
+    word_options: list[str]
+    function: Option
+    modes: list[Mode]
+    optional: bool
+
+
+class ClauseTemplate(BaseModel):
+    name: str
+    description: str
+    language: str
+    components: list[Component]
