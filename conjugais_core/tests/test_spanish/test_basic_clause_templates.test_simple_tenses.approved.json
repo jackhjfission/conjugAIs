@@ -14,42 +14,42 @@
                     "options": [
                         {
                             "description": "Corresponds to 'yo' (I). Used when the speaker refers to themselves performing the action.",
-                            "instruction": "Use the Spanish first person singular conjugation",
+                            "instruction": "Use the Spanish first person singular conjugation.",
                             "name": "first_person_singular"
                         },
                         {
                             "description": "Corresponds to 't\u00fa' (you, informal). Used when addressing one person in a familiar or casual context.",
-                            "instruction": "Use the Spanish second person singular conjugation",
+                            "instruction": "Use the Spanish second person singular conjugation.",
                             "name": "second_person_singular"
                         },
                         {
                             "description": "Corresponds to 'usted' (you, formal). Used when addressing one person in a formal, respectful, or professional context.",
-                            "instruction": "Use the Spanish second person singular conjugation for polite address",
+                            "instruction": "Use the Spanish second person singular conjugation for polite address.",
                             "name": "second_person_singular_polite"
                         },
                         {
                             "description": "Corresponds to '\u00e9l/ella' (he/she/it). Used when referring to one person or thing other than the speaker or addressee.",
-                            "instruction": "Use the Spanish third person singular conjugation",
+                            "instruction": "Use the Spanish third person singular conjugation.",
                             "name": "third_person_singular"
                         },
                         {
                             "description": "Corresponds to 'nosotros/nosotras' (we). Used when the speaker includes themselves in a group performing the action.",
-                            "instruction": "Use the Spanish first person plural conjugation",
+                            "instruction": "Use the Spanish first person plural conjugation.",
                             "name": "first_person_plural"
                         },
                         {
                             "description": "Corresponds to 'vosotros/vosotras' (you all, informal). Used when addressing multiple people in a familiar or casual context, primarily in Spain.",
-                            "instruction": "Use the Spanish second person plural conjugation",
+                            "instruction": "Use the Spanish second person plural conjugation.",
                             "name": "second_person_plural"
                         },
                         {
                             "description": "Corresponds to 'ustedes' (you all, formal). Used when addressing multiple people in a formal context, or any group in Latin America.",
-                            "instruction": "Use the Spanish second person plural conjugation for polite address",
+                            "instruction": "Use the Spanish second person plural conjugation for polite address.",
                             "name": "second_person_plural_polite"
                         },
                         {
                             "description": "Corresponds to 'ellos/ellas' (they). Used when referring to multiple people or things other than the speaker or addressee.",
-                            "instruction": "Use the Spanish third person plural conjugation",
+                            "instruction": "Use the Spanish third person plural conjugation.",
                             "name": "third_person_plural"
                         }
                     ]
@@ -61,27 +61,27 @@
                     "options": [
                         {
                             "description": "Describes current actions, habits, universal truths, and near-future plans.",
-                            "instruction": "Use the Spanish simple present tense in the indicative mood",
+                            "instruction": "Use the Spanish simple present tense in the indicative mood.",
                             "name": "presente_indicativo"
                         },
                         {
                             "description": "Describes completed actions in the past with a definite beginning and end.",
-                            "instruction": "Use the Spanish preterito in the indicative mood",
+                            "instruction": "Use the Spanish preterito in the indicative mood.",
                             "name": "preterito_indicativo"
                         },
                         {
                             "description": "Describes ongoing, habitual, or descriptive past actions without a defined beginning or end.",
-                            "instruction": "Use the Spanish imperfecto in the indicative mood",
+                            "instruction": "Use the Spanish imperfecto in the indicative mood.",
                             "name": "imperfecto_indicativo"
                         },
                         {
                             "description": "Describes what will or shall happen, predictions, or assumptions.",
-                            "instruction": "Use the Spanish simple future tense in the indicative mood",
+                            "instruction": "Use the Spanish simple future tense in the indicative mood.",
                             "name": "futuro_indicativo"
                         },
                         {
                             "description": "Expresses what someone would, could, or should do, used for polite requests, hypothetical situations (if clauses), expressing wishes, and speculation.",
-                            "instruction": "Use the Spanish conditional in the indicative mood",
+                            "instruction": "Use the Spanish conditional in the indicative mood.",
                             "name": "conditional_indicativo"
                         }
                     ]
@@ -133,12 +133,12 @@
                     "options": [
                         {
                             "description": "In Spanish, subject pronouns can be inferred from the verb conjugation, making them optional in most contexts.",
-                            "instruction": "Do not explicitly use subject pronouns",
+                            "instruction": "Do not explicitly use subject nouns or pronouns.",
                             "name": "None"
                         },
                         {
                             "description": "In Spanish specific nouns can be used as subjects, direct objects or indirect objects.",
-                            "instruction": "Explicitly use one or more nouns. Do not use pronouns",
+                            "instruction": "Explicitly use one or more nouns. Do not use pronouns.",
                             "name": "nouns"
                         },
                         {
@@ -148,7 +148,7 @@
                         },
                         {
                             "description": "In Spanish, nouns and pronouns can both be used together for emphasis or clarity.",
-                            "instruction": "Use both nouns and pronouns together",
+                            "instruction": "Use both nouns and pronouns together.",
                             "name": "nouns_and_pronouns"
                         }
                     ]
@@ -188,7 +188,7 @@
                     "options": [
                         {
                             "description": "In Spanish specific nouns can be used as subjects, direct objects or indirect objects.",
-                            "instruction": "Explicitly use one or more nouns. Do not use pronouns",
+                            "instruction": "Explicitly use one or more nouns. Do not use pronouns.",
                             "name": "nouns"
                         },
                         {
@@ -198,7 +198,7 @@
                         },
                         {
                             "description": "In Spanish, nouns and pronouns can both be used together for emphasis or clarity.",
-                            "instruction": "Use both nouns and pronouns together",
+                            "instruction": "Use both nouns and pronouns together.",
                             "name": "nouns_and_pronouns"
                         }
                     ]
@@ -238,7 +238,7 @@
                     "options": [
                         {
                             "description": "In Spanish specific nouns can be used as subjects, direct objects or indirect objects.",
-                            "instruction": "Explicitly use one or more nouns. Do not use pronouns",
+                            "instruction": "Explicitly use one or more nouns. Do not use pronouns.",
                             "name": "nouns"
                         },
                         {
@@ -248,7 +248,7 @@
                         },
                         {
                             "description": "In Spanish, nouns and pronouns can both be used together for emphasis or clarity.",
-                            "instruction": "Use both nouns and pronouns together",
+                            "instruction": "Use both nouns and pronouns together.",
                             "name": "nouns_and_pronouns"
                         }
                     ]

@@ -10,7 +10,7 @@ class NounPronounBehaviour:
     def none() -> Option:
         return Option(
             name="None",
-            instruction="Do not explicitly use subject pronouns",
+            instruction="Do not explicitly use subject nouns or pronouns.",
             description="In Spanish, subject pronouns can be inferred from the verb conjugation, making them optional in most contexts.",
         )
 
@@ -18,7 +18,7 @@ class NounPronounBehaviour:
     def nouns() -> Option:
         return Option(
             name="nouns",
-            instruction="Explicitly use one or more nouns. Do not use pronouns",
+            instruction="Explicitly use one or more nouns. Do not use pronouns.",
             description="In Spanish specific nouns can be used as subjects, direct objects or indirect objects.",
         )
 
@@ -34,6 +34,6 @@ class NounPronounBehaviour:
     def nouns_and_pronouns() -> Option:
         return Option(
             name="nouns_and_pronouns",
-            instruction="Use both nouns and pronouns together",
+            instruction="Use both nouns and pronouns together.",
             description="In Spanish, nouns and pronouns can both be used together for emphasis or clarity.",
         )
