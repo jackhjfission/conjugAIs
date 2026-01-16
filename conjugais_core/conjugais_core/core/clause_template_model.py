@@ -5,7 +5,6 @@ class Option(BaseModel):
     name: str
     instruction: str
     description: str
-    language: str
 
 
 class Mode(BaseModel):
