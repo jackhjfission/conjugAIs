@@ -1,4 +1,4 @@
-from .clause_template_model import Mode, Option
+from .clause_template_model import Mode, ModeOption
 
 
 def word_count(min_: int, max_: int) -> Mode:
@@ -7,7 +7,7 @@ def word_count(min_: int, max_: int) -> Mode:
         name="count",
         description="The number of words to use.",
         options=[
-            Option(
+            ModeOption(
                 name=f"{_}",
                 instruction=f"Use {_} of this word type in the sentence.",
                 description="",

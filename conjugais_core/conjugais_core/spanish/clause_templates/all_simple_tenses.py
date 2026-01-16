@@ -12,7 +12,7 @@ all_simple_tenses = ClauseTemplate(
     components=[
         Component(
             word_options=[],
-            function=functions.basic_function["main_verb"],
+            word_function=functions.basic_function["main_verb"],
             modes=[
                 modes.Person.all_person(),
                 modes.Tense.all_simple_indicativo(),
@@ -22,25 +22,25 @@ all_simple_tenses = ClauseTemplate(
         ),
         Component(
             word_options=[],
-            function=functions.basic_function["subject"],
+            word_function=functions.basic_function["subject"],
             modes=[word_count(min_=1, max_=2), modes.NounPronounBehaviour.subject()],
             optional=False,
         ),
         Component(
             word_options=[],
-            function=functions.basic_function["direct_object"],
+            word_function=functions.basic_function["direct_object"],
             modes=[word_count(min_=1, max_=2), modes.NounPronounBehaviour.object()],
             optional=True,
         ),
         Component(
             word_options=[],
-            function=functions.basic_function["indirect_object"],
+            word_function=functions.basic_function["indirect_object"],
             modes=[word_count(min_=1, max_=2), modes.NounPronounBehaviour.object()],
             optional=True,
         ),
         Component(
             word_options=[],
-            function=functions.basic_function["wildcard"],
+            word_function=functions.basic_function["wildcard"],
             modes=[
                 word_count(min_=1, max_=2),
             ],

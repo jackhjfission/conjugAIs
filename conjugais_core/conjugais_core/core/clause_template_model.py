@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 
-class Option(BaseModel):
+class ModeOption(BaseModel):
     name: str
     instruction: str
     description: str
@@ -10,13 +10,18 @@ class Option(BaseModel):
 class Mode(BaseModel):
     name: str
     description: str
-    options: list[Option]
+    options: list[ModeOption]
     is_choice: bool
+
+
+class WordFunction(BaseModel):
+    name: str
+    description: str
 
 
 class Component(BaseModel):
     word_options: list[str]
-    function: Option
+    word_function: WordFunction
     modes: list[Mode]
     optional: bool
 

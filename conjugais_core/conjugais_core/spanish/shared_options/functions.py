@@ -1,40 +1,35 @@
 from typing import TypedDict
 
-from conjugais_core.core import Option
+from conjugais_core.core import WordFunction
 
 
 class BasicFunction(TypedDict):
-    subject: Option
-    direct_object: Option
-    indirect_object: Option
-    main_verb: Option
-    wildcard: Option
+    subject: WordFunction
+    direct_object: WordFunction
+    indirect_object: WordFunction
+    main_verb: WordFunction
+    wildcard: WordFunction
 
 
 basic_function = BasicFunction(
-    subject=Option(
+    subject=WordFunction(
         name="subject",
-        instruction="Include a subject in the sentence.",
         description="The subject indicates who or what is performing the verb's action.",
     ),
-    direct_object=Option(
+    direct_object=WordFunction(
         name="direct_object",
-        instruction="Include a direct object in the sentence.",
         description="The object indicates who or what is receiving the verb's action.",
     ),
-    indirect_object=Option(
+    indirect_object=WordFunction(
         name="indirect_object",
-        instruction="Include an indirect object in the sentence.",
         description="The indirect object indicates to whom or for whom an action is done.",
     ),
-    main_verb=Option(
+    main_verb=WordFunction(
         name="main_verb",
-        instruction="Include a main verb in the sentence.",
         description="The main verb indicates the primary action of the sentence.",
     ),
-    wildcard=Option(
+    wildcard=WordFunction(
         name="wildcard",
-        instruction="Include wildcard words in the sentence.",
         description=(
             "Wildcards can be used to supplement the other word types which are explicitly specified to make "
             "sentences sound more natural and provide further translation practice."
