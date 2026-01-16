@@ -1,11 +1,11 @@
-from conjugais_core.core import ClauseTemplate, Component
+from conjugais_core.core import Component
 from conjugais_core.core.shared_modes import word_count
 
 from .. import modes
-from ..definitions import SPANISH
+from ..definitions import SPANISH, SpanishClauseTemplate
 from ..shared_options import functions
 
-all_simple_tenses = ClauseTemplate(
+all_simple_tenses = SpanishClauseTemplate(
     name="simple_tenses",
     description="Practice of all Spanish simple tenses.",
     language=SPANISH,
@@ -16,35 +16,37 @@ all_simple_tenses = ClauseTemplate(
             modes=[
                 modes.Person.all_person(),
                 modes.Tense.all_simple_indicativo(),
-                word_count(min_=1, max_=1),
             ],
             optional=False,
+            word_count=word_count(min_=1, max_=1),
         ),
         Component(
             word_options=[],
             word_function=functions.basic_function["subject"],
-            modes=[word_count(min_=1, max_=2), modes.NounPronounBehaviour.subject()],
-            optional=False,
+            modes=[modes.NounPronounBehaviour.subject()],
+            optional=True,
+            word_count=word_count(min_=1, max_=2),
         ),
         Component(
             word_options=[],
             word_function=functions.basic_function["direct_object"],
-            modes=[word_count(min_=1, max_=2), modes.NounPronounBehaviour.object()],
+            modes=[modes.NounPronounBehaviour.object()],
             optional=True,
+            word_count=word_count(min_=1, max_=2),
         ),
         Component(
             word_options=[],
             word_function=functions.basic_function["indirect_object"],
-            modes=[word_count(min_=1, max_=2), modes.NounPronounBehaviour.object()],
+            modes=[modes.NounPronounBehaviour.object()],
             optional=True,
+            word_count=word_count(min_=1, max_=2),
         ),
         Component(
             word_options=[],
             word_function=functions.basic_function["wildcard"],
-            modes=[
-                word_count(min_=1, max_=2),
-            ],
+            modes=[],
             optional=True,
+            word_count=word_count(min_=1, max_=2),
         ),
     ],
 )

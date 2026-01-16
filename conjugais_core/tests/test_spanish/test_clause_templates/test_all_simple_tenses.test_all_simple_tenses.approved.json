@@ -1,11 +1,6 @@
 {
     "components": [
         {
-            "function": {
-                "description": "The main verb indicates the primary action of the sentence.",
-                "instruction": "Include a main verb in the sentence.",
-                "name": "main_verb"
-            },
             "modes": [
                 {
                     "description": "Collection of all Spanish subject person.",
@@ -85,47 +80,29 @@
                             "name": "conditional_indicativo"
                         }
                     ]
-                },
-                {
-                    "description": "The number of words to use.",
-                    "is_choice": true,
-                    "name": "count",
-                    "options": [
-                        {
-                            "description": "",
-                            "instruction": "Use 1 of this word type in the sentence.",
-                            "name": "1"
-                        }
-                    ]
                 }
             ],
             "optional": false,
+            "word_count": {
+                "description": "The number of words to use.",
+                "is_choice": true,
+                "name": "count",
+                "options": [
+                    {
+                        "description": "",
+                        "instruction": "Use 1 of this word type in the sentence. The count of words should not be strictly enforced and must defer to other grammatical selections. For instance, if the first person singular is used then the number of nouns used as the subject of the sentence must be one and any other value specified by this option can be ignored.",
+                        "name": "1"
+                    }
+                ]
+            },
+            "word_function": {
+                "description": "The main verb indicates the primary action of the sentence.",
+                "name": "main_verb"
+            },
             "word_options": []
         },
         {
-            "function": {
-                "description": "The subject indicates who or what is performing the verb's action.",
-                "instruction": "Include a subject in the sentence.",
-                "name": "subject"
-            },
             "modes": [
-                {
-                    "description": "The number of words to use.",
-                    "is_choice": true,
-                    "name": "count",
-                    "options": [
-                        {
-                            "description": "",
-                            "instruction": "Use 1 of this word type in the sentence.",
-                            "name": "1"
-                        },
-                        {
-                            "description": "",
-                            "instruction": "Use 2 of this word type in the sentence.",
-                            "name": "2"
-                        }
-                    ]
-                },
                 {
                     "description": "Choice of noun or pronoun for subject.",
                     "is_choice": true,
@@ -154,33 +131,81 @@
                     ]
                 }
             ],
-            "optional": false,
+            "optional": true,
+            "word_count": {
+                "description": "The number of words to use.",
+                "is_choice": true,
+                "name": "count",
+                "options": [
+                    {
+                        "description": "",
+                        "instruction": "Use 1 of this word type in the sentence. The count of words should not be strictly enforced and must defer to other grammatical selections. For instance, if the first person singular is used then the number of nouns used as the subject of the sentence must be one and any other value specified by this option can be ignored.",
+                        "name": "1"
+                    },
+                    {
+                        "description": "",
+                        "instruction": "Use 2 of this word type in the sentence. The count of words should not be strictly enforced and must defer to other grammatical selections. For instance, if the first person singular is used then the number of nouns used as the subject of the sentence must be one and any other value specified by this option can be ignored.",
+                        "name": "2"
+                    }
+                ]
+            },
+            "word_function": {
+                "description": "The subject indicates who or what is performing the verb's action.",
+                "name": "subject"
+            },
             "word_options": []
         },
         {
-            "function": {
+            "modes": [
+                {
+                    "description": "Choice of noun or pronoun for object.",
+                    "is_choice": true,
+                    "name": "object_noun_pronoun",
+                    "options": [
+                        {
+                            "description": "In Spanish specific nouns can be used as subjects, direct objects or indirect objects.",
+                            "instruction": "Explicitly use one or more nouns. Do not use pronouns.",
+                            "name": "nouns"
+                        },
+                        {
+                            "description": "In Spanish specific pronouns can be used as subjects, direct objects or indirect objects.",
+                            "instruction": "Explicitly use one or more pronouns. Do not use nouns.",
+                            "name": "pronouns"
+                        },
+                        {
+                            "description": "In Spanish, nouns and pronouns can both be used together for emphasis or clarity.",
+                            "instruction": "Use both nouns and pronouns together.",
+                            "name": "nouns_and_pronouns"
+                        }
+                    ]
+                }
+            ],
+            "optional": true,
+            "word_count": {
+                "description": "The number of words to use.",
+                "is_choice": true,
+                "name": "count",
+                "options": [
+                    {
+                        "description": "",
+                        "instruction": "Use 1 of this word type in the sentence. The count of words should not be strictly enforced and must defer to other grammatical selections. For instance, if the first person singular is used then the number of nouns used as the subject of the sentence must be one and any other value specified by this option can be ignored.",
+                        "name": "1"
+                    },
+                    {
+                        "description": "",
+                        "instruction": "Use 2 of this word type in the sentence. The count of words should not be strictly enforced and must defer to other grammatical selections. For instance, if the first person singular is used then the number of nouns used as the subject of the sentence must be one and any other value specified by this option can be ignored.",
+                        "name": "2"
+                    }
+                ]
+            },
+            "word_function": {
                 "description": "The object indicates who or what is receiving the verb's action.",
-                "instruction": "Include a direct object in the sentence.",
                 "name": "direct_object"
             },
+            "word_options": []
+        },
+        {
             "modes": [
-                {
-                    "description": "The number of words to use.",
-                    "is_choice": true,
-                    "name": "count",
-                    "options": [
-                        {
-                            "description": "",
-                            "instruction": "Use 1 of this word type in the sentence.",
-                            "name": "1"
-                        },
-                        {
-                            "description": "",
-                            "instruction": "Use 2 of this word type in the sentence.",
-                            "name": "2"
-                        }
-                    ]
-                },
                 {
                     "description": "Choice of noun or pronoun for object.",
                     "is_choice": true,
@@ -205,88 +230,58 @@
                 }
             ],
             "optional": true,
-            "word_options": []
-        },
-        {
-            "function": {
+            "word_count": {
+                "description": "The number of words to use.",
+                "is_choice": true,
+                "name": "count",
+                "options": [
+                    {
+                        "description": "",
+                        "instruction": "Use 1 of this word type in the sentence. The count of words should not be strictly enforced and must defer to other grammatical selections. For instance, if the first person singular is used then the number of nouns used as the subject of the sentence must be one and any other value specified by this option can be ignored.",
+                        "name": "1"
+                    },
+                    {
+                        "description": "",
+                        "instruction": "Use 2 of this word type in the sentence. The count of words should not be strictly enforced and must defer to other grammatical selections. For instance, if the first person singular is used then the number of nouns used as the subject of the sentence must be one and any other value specified by this option can be ignored.",
+                        "name": "2"
+                    }
+                ]
+            },
+            "word_function": {
                 "description": "The indirect object indicates to whom or for whom an action is done.",
-                "instruction": "Include an indirect object in the sentence.",
                 "name": "indirect_object"
             },
-            "modes": [
-                {
-                    "description": "The number of words to use.",
-                    "is_choice": true,
-                    "name": "count",
-                    "options": [
-                        {
-                            "description": "",
-                            "instruction": "Use 1 of this word type in the sentence.",
-                            "name": "1"
-                        },
-                        {
-                            "description": "",
-                            "instruction": "Use 2 of this word type in the sentence.",
-                            "name": "2"
-                        }
-                    ]
-                },
-                {
-                    "description": "Choice of noun or pronoun for object.",
-                    "is_choice": true,
-                    "name": "object_noun_pronoun",
-                    "options": [
-                        {
-                            "description": "In Spanish specific nouns can be used as subjects, direct objects or indirect objects.",
-                            "instruction": "Explicitly use one or more nouns. Do not use pronouns.",
-                            "name": "nouns"
-                        },
-                        {
-                            "description": "In Spanish specific pronouns can be used as subjects, direct objects or indirect objects.",
-                            "instruction": "Explicitly use one or more pronouns. Do not use nouns.",
-                            "name": "pronouns"
-                        },
-                        {
-                            "description": "In Spanish, nouns and pronouns can both be used together for emphasis or clarity.",
-                            "instruction": "Use both nouns and pronouns together.",
-                            "name": "nouns_and_pronouns"
-                        }
-                    ]
-                }
-            ],
-            "optional": true,
             "word_options": []
         },
         {
-            "function": {
+            "modes": [],
+            "optional": true,
+            "word_count": {
+                "description": "The number of words to use.",
+                "is_choice": true,
+                "name": "count",
+                "options": [
+                    {
+                        "description": "",
+                        "instruction": "Use 1 of this word type in the sentence. The count of words should not be strictly enforced and must defer to other grammatical selections. For instance, if the first person singular is used then the number of nouns used as the subject of the sentence must be one and any other value specified by this option can be ignored.",
+                        "name": "1"
+                    },
+                    {
+                        "description": "",
+                        "instruction": "Use 2 of this word type in the sentence. The count of words should not be strictly enforced and must defer to other grammatical selections. For instance, if the first person singular is used then the number of nouns used as the subject of the sentence must be one and any other value specified by this option can be ignored.",
+                        "name": "2"
+                    }
+                ]
+            },
+            "word_function": {
                 "description": "Wildcards can be used to supplement the other word types which are explicitly specified to make sentences sound more natural and provide further translation practice.",
-                "instruction": "Include wildcard words in the sentence.",
                 "name": "wildcard"
             },
-            "modes": [
-                {
-                    "description": "The number of words to use.",
-                    "is_choice": true,
-                    "name": "count",
-                    "options": [
-                        {
-                            "description": "",
-                            "instruction": "Use 1 of this word type in the sentence.",
-                            "name": "1"
-                        },
-                        {
-                            "description": "",
-                            "instruction": "Use 2 of this word type in the sentence.",
-                            "name": "2"
-                        }
-                    ]
-                }
-            ],
-            "optional": true,
             "word_options": []
         }
     ],
     "description": "Practice of all Spanish simple tenses.",
+    "instruction": "**Spanish language general instructions**\n\n    Your aim is to create grammatically correct and satisfying sentences in Spanish for a learner.\n    Follow the instructions provided by the clause template to generate a sentence.\n\n    If any `mode` contains multiple options you can select the option at random.\n\n    If any `word_options` contains multiple options you can select according to the `count`. However the `count` of subjects must agree\n    with the `person`. If a specific `person` is requested with an inconsistent `count` of subjects then the `count` of subjects must be disregarded.\n\n    If the `word_options` contains no words then choose vocabulary yourself based on the previous logic.\n\n    Note the `optional` attribute represents whether a particular component is necessary in a sentence.\n\n    **Subjects are always optional in Spanish** because they can be inferred from verb conjugation:\n    - Example: \"Trabajo en Madrid\" (I work in Madrid) - no explicit subject, implied from verb ending\n    - Example: \"Hab\u00edan estado comiendo\" (They had been eating) - no explicit subject\n\n    The `mode` with `name` \"subject_noun_pronoun\" specifies this behaviour. However, there are examples in Spanish\n    of sentences with no subject (implicit or explicit). eg:\n    - Example: \"Llueve\" (It's raining) - no subject exists\n    - Example: \"Se dice que...\" (It is said that...) - Impersonal \"se\" construction, no subject exists\n\n    Use your judgement based on the available verbs to include a subject or not.\n\n    **Direct objects are optional** when using intransitive verbs:\n    - Example: \"Duermo bien\" (I sleep well) - no direct object needed\n    - Example: \"Corremos cada d\u00eda\" (We run every day) - no direct object needed\n\n    **Indirect objects are optional** in most sentences:\n    - Example: \"Como una manzana\" (I eat an apple) - has direct object, no indirect object\n    - Example: \"Le\u00ed el libro\" (I read the book) - has direct object, no indirect object\n\n    Use your judgement on whether to include subjects, direct objects and indirect objects based on natural Spanish usage. If you\n    choose to include them, aim to include the number specified in `count` for that `function`. However,\n    as mentioned, defer to the `person` for the subject.\n\n    Vary gender for the purpose of practice.\n\n    Articles and adjectives _must_ agree with their nouns in gender and number.\n\n    **In general, maintaining the grammatical rules of Spanish is the highest priority, above the specification of a sentence provided.**\n",
     "language": "SPANISH",
     "name": "simple_tenses"
 }

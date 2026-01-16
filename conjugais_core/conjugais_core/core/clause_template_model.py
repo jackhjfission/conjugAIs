@@ -24,10 +24,12 @@ class Component(BaseModel):
     word_function: WordFunction
     modes: list[Mode]
     optional: bool
+    word_count: Mode
 
 
 class ClauseTemplate(BaseModel):
     name: str
     description: str
+    instruction: str
     language: str
     components: list[Component]
