@@ -10,7 +10,7 @@ from ..definitions import SpanishOption
 class Person:
 
     @staticmethod
-    def option_first_person_singular() -> Option:
+    def first_person_singular() -> Option:
         return SpanishOption(
             name="first_person_singular",
             instruction="Use the Spanish first person singular conjugation",
@@ -18,7 +18,7 @@ class Person:
         )
 
     @staticmethod
-    def option_second_person_singular() -> Option:
+    def second_person_singular() -> Option:
         return SpanishOption(
             name="second_person_singular",
             instruction="Use the Spanish second person singular conjugation",
@@ -26,7 +26,7 @@ class Person:
         )
 
     @staticmethod
-    def option_second_person_singular_polite() -> Option:
+    def second_person_singular_polite() -> Option:
         return SpanishOption(
             name="second_person_singular_polite",
             instruction="Use the Spanish second person singular conjugation for polite address",
@@ -34,7 +34,7 @@ class Person:
         )
 
     @staticmethod
-    def option_third_person_singular() -> Option:
+    def third_person_singular() -> Option:
         return SpanishOption(
             name="third_person_singular",
             instruction="Use the Spanish third person singular conjugation",
@@ -42,7 +42,7 @@ class Person:
         )
 
     @staticmethod
-    def option_first_person_plural() -> Option:
+    def first_person_plural() -> Option:
         return SpanishOption(
             name="first_person_plural",
             instruction="Use the Spanish first person plural conjugation",
@@ -50,7 +50,7 @@ class Person:
         )
 
     @staticmethod
-    def option_second_person_plural() -> Option:
+    def second_person_plural() -> Option:
         return SpanishOption(
             name="second_person_plural",
             instruction="Use the Spanish second person plural conjugation",
@@ -58,7 +58,7 @@ class Person:
         )
 
     @staticmethod
-    def option_second_person_plural_polite() -> Option:
+    def second_person_plural_polite() -> Option:
         return SpanishOption(
             name="second_person_plural_polite",
             instruction="Use the Spanish second person plural conjugation for polite address",
@@ -66,7 +66,7 @@ class Person:
         )
 
     @staticmethod
-    def option_third_person_plural() -> Option:
+    def third_person_plural() -> Option:
         return SpanishOption(
             name="third_person_plural",
             instruction="Use the Spanish third person plural conjugation",

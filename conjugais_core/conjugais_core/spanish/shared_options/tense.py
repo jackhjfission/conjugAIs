@@ -37,7 +37,7 @@ class ImpersonalForms:
 class SimpleIndicativo:
 
     @staticmethod
-    def presente_indicativo() -> Option:
+    def presente() -> Option:
         return SpanishOption(
             name="presente_indicativo",
             instruction="Use the Spanish simple present tense in the indicative mood",

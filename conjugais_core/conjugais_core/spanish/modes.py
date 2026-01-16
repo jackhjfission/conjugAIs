@@ -1,0 +1,72 @@
+from conjugais_core.core import Mode
+
+from .shared_options import noun, person, tense
+
+
+class Tense:
+
+    @staticmethod
+    def all_simple_indicativo() -> Mode:
+        return Mode(
+            name="all_simple_indicativo",
+            description="Collection of all Spanish simple indicativo tenses.",
+            options=[
+                tense.SimpleIndicativo.presente(),
+                tense.SimpleIndicativo.preterito(),
+                tense.SimpleIndicativo.imperfecto(),
+                tense.SimpleIndicativo.futuro(),
+                tense.SimpleIndicativo.conditional(),
+            ],
+            is_choice=True,
+        )
+
+
+class Person:
+
+    @staticmethod
+    def all_person() -> Mode:
+        return Mode(
+            name="all_person",
+            description="Collection of all Spanish subject person.",
+            options=[
+                person.Person.first_person_singular(),
+                person.Person.second_person_singular(),
+                person.Person.second_person_singular_polite(),
+                person.Person.third_person_singular(),
+                person.Person.first_person_plural(),
+                person.Person.second_person_plural(),
+                person.Person.second_person_plural_polite(),
+                person.Person.third_person_plural(),
+            ],
+            is_choice=True,
+        )
+
+
+class NounPronounBehaviour:
+
+    @staticmethod
+    def subject() -> Mode:
+        return Mode(
+            name="subject_noun_pronoun",
+            description="Choice of noun or pronoun for subject.",
+            options=[
+                noun.NounPronounBehaviour.none(),
+                noun.NounPronounBehaviour.nouns(),
+                noun.NounPronounBehaviour.pronouns(),
+                noun.NounPronounBehaviour.nouns_and_pronouns(),
+            ],
+            is_choice=True,
+        )
+
+    @staticmethod
+    def object() -> Mode:
+        return Mode(
+            name="object_noun_pronoun",
+            description="Choice of noun or pronoun for object.",
+            options=[
+                noun.NounPronounBehaviour.nouns(),
+                noun.NounPronounBehaviour.pronouns(),
+                noun.NounPronounBehaviour.nouns_and_pronouns(),
+            ],
+            is_choice=True,
+        )
